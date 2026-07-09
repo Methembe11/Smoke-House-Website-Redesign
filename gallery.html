@@ -25,6 +25,7 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
+                <span class="nav-logo-text">Smokehouse</span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -34,6 +35,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <span class="nav-hours">Open Daily 11AM–11PM</span>
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -49,7 +51,7 @@
     <section class="page-banner">
         <div class="page-banner-overlay"></div>
         <img src="assets/gallery-banner.jpg" alt="Gallery Banner">
-        <div class="page-banner-content">
+        <div class="page-banner-content reveal">
             <h1><span class="text-copper">Gallery</span></h1>
             <p>A <em>glimpse</em> of The Smokehouse — where fire, flavour, and the Zambezi spirit <em>come together</em>.</p>
         </div>
@@ -57,7 +59,7 @@
 
     <!-- GALLERY -->
     <section class="gallery">
-        <div class="gallery-masonry">
+        <div class="gallery-masonry reveal-stagger">
             <div class="gallery-item gallery-item--wide">
                 <img src="assets/restaurant-interior.jpg" alt="Restaurant Interior">
             </div>
@@ -98,7 +100,7 @@
     <section class="reservation">
         <div class="reservation-bg"></div>
         <div class="container">
-            <div class="reservation-content">
+            <div class="reservation-content reveal">
                 <span class="section-label">Visit Us</span>
                 <h2 class="reservation-title">See It <em>for Yourself</em></h2>
                 <p>Photos don't do it justice. Come experience The Smokehouse in person.</p>
@@ -149,7 +151,7 @@
                     <h4>Stay Connected</h4>
                     <p>Subscribe for events, new brews, and specials.</p>
                     <form class="newsletter-form" id="newsletterForm">
-                        <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+                        <input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter">
                         <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
                     </form>
                     <div class="newsletter-success" id="newsletterSuccess">Thanks for subscribing!</div>

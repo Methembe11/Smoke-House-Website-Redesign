@@ -231,6 +231,18 @@ if (newsletterForm) {
     });
 }
 
+/* === SCROLL REVEAL === */
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal, .reveal-stagger, .reveal-scale, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
 /* === SMOOTH SCROLL FOR ANCHOR LINKS === */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
