@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://smokehousezim.com/gallery">
     <meta property="og:image" content="">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🔥</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <title>Gallery | The Smokehouse at River Brewery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- NAVIGATION -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="banner">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="nav-logo-mark">S</span>
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">THE SMOKEHOUSE</span>
-                    <span class="nav-logo-sub">at River Brewery</span>
-                </div>
+                <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -38,18 +35,20 @@
             </ul>
             <div class="nav-actions">
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
             </div>
         </div>
     </nav>
 
+    <main id="main-content">
+
     <!-- PAGE BANNER -->
     <section class="page-banner">
         <div class="page-banner-overlay"></div>
-        <div class="img-placeholder">Gallery Banner</div>
+        <img src="assets/gallery-banner.jpg" alt="Gallery Banner">
         <div class="page-banner-content">
             <h1><span class="text-copper">Gallery</span></h1>
             <p>A <em>glimpse</em> of The Smokehouse — where fire, flavour, and the Zambezi spirit <em>come together</em>.</p>
@@ -60,31 +59,31 @@
     <section class="gallery">
         <div class="gallery-masonry">
             <div class="gallery-item gallery-item--wide">
-                <div class="img-placeholder">Restaurant Interior</div>
+                <img src="assets/restaurant-interior.jpg" alt="Restaurant Interior">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Burger &amp; Beer</div>
+                <img src="assets/burger-and-beer.jpg" alt="Burger &amp; Beer">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Dessert</div>
+                <img src="assets/dessert.jpg" alt="Dessert">
             </div>
             <div class="gallery-item gallery-item--tall">
-                <div class="img-placeholder">Craft Cocktail</div>
+                <img src="assets/craft-cocktail.jpg" alt="Craft Cocktail">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Grilled Steak</div>
+                <img src="assets/grilled-steak.jpg" alt="Grilled Steak">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Beer Selection</div>
+                <img src="assets/beer-selection.jpg" alt="Beer Selection">
             </div>
             <div class="gallery-item gallery-item--wide">
-                <div class="img-placeholder">Restaurant Bar</div>
+                <img src="assets/restaurant-bar.jpg" alt="Restaurant Bar">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Dining Area</div>
+                <img src="assets/dining-area.jpg" alt="Dining Area">
             </div>
             <div class="gallery-item">
-                <div class="img-placeholder">Live Music Night</div>
+                <img src="assets/live-music-night.jpg" alt="Live Music Night">
             </div>
         </div>
     </section>
@@ -112,16 +111,14 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    </main>
+
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="nav-logo">
-                        <span class="nav-logo-mark">S</span>
-                        <div class="nav-logo-text">
-                            <span class="nav-logo-title">THE SMOKEHOUSE</span>
-                            <span class="nav-logo-sub">at River Brewery</span>
-                        </div>
+                        <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
                     </a>
                     <p>Victoria Falls' home of craft beer, smokehouse dining, and unforgettable live entertainment.</p>
                     <div class="footer-socials">

@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://smokehousezim.com">
     <meta property="og:image" content="">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🔥</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <title>The Smokehouse at River Brewery | Victoria Falls</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- NAVIGATION -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="banner">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="nav-logo-mark">S</span>
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">THE SMOKEHOUSE</span>
-                    <span class="nav-logo-sub">at River Brewery</span>
-                </div>
+                <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -38,43 +35,29 @@
             </ul>
             <div class="nav-actions">
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
             </div>
         </div>
     </nav>
 
+    <main id="main-content">
+
     <!-- HERO -->
     <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-image">
-            <div class="img-placeholder">Hero Background</div>
+            <img src="assets/hero-bg.webp" alt="Hero Background">
         </div>
+        <div class="hero-ember"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="hero-kicker">The Smokehouse at River Brewery</span>
-            <h1 class="hero-title">Victoria Falls' <em>Home</em> of <span class="text-copper">Craft Beer</span> &amp; <em>Smokehouse Dining</em></h1>
-            <p class="hero-subtitle">Slow-smoked meats, handcrafted beer, and unforgettable experiences in the heart of Victoria Falls.</p>
+            <h1 class="hero-title">CRAFT BEER<br><span class="text-copper">&amp;</span><br>SMOKEHOUSE</h1>
+            <p class="hero-subtitle">Victoria Falls, Zimbabwe</p>
             <div class="hero-buttons">
                 <a href="menu.html" class="btn-primary">View Menu</a>
                 <a href="contact.html" class="btn-secondary">Reserve a Table</a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="hero-stat-number">15+</span>
-                    <span class="hero-stat-label">Craft Beers</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">40+</span>
-                    <span class="hero-stat-label">Menu Items</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">7</span>
-                    <span class="hero-stat-label">Days a Week</span>
-                </div>
             </div>
         </div>
     </section>
@@ -117,7 +100,7 @@
 
     <!-- FULL-BLEED -->
     <div class="full-bleed-image">
-        <div class="img-placeholder">Atmosphere</div>
+        <img src="assets/atmosphere.jpg" alt="Atmosphere">
     </div>
 
     <!-- FEATURED MENU -->
@@ -130,7 +113,7 @@
             </div>
             <div class="featured-dish">
                 <div class="featured-dish-image">
-                    <div class="img-placeholder">Smokehouse Burger</div>
+                    <img src="assets/smokehouse-burger.jpg" alt="Smokehouse Burger">
                 </div>
                 <div class="featured-dish-info">
                     <span class="featured-dish-tag">Bestseller</span>
@@ -184,7 +167,7 @@
             </div>
             <div class="brews-grid">
                 <div class="brew-card">
-                    <div class="brew-image"><div class="img-placeholder">Zambezi Lager</div></div>
+                    <div class="brew-image"><img src="assets/zambezi-lager.jpg" alt="Zambezi Lager"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Zambezi Lager</h3>
                         <span class="brew-style">Crisp &amp; Clean</span>
@@ -193,7 +176,7 @@
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><div class="img-placeholder">Victoria IPA</div></div>
+                    <div class="brew-image"><img src="assets/victoria-ipa.jpg" alt="Victoria IPA"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Victoria IPA</h3>
                         <span class="brew-style">Bold &amp; Hoppy</span>
@@ -202,7 +185,7 @@
                     </div>
                 </div>
                 <div class="brew-card brew-card--featured">
-                    <div class="brew-image"><div class="img-placeholder">Smokehouse Stout</div></div>
+                    <div class="brew-image"><img src="assets/smokehouse-stout.jpg" alt="Smokehouse Stout"></div>
                     <span class="brew-badge">Staff Pick</span>
                     <div class="brew-body">
                         <h3 class="brew-name">Smokehouse Stout</h3>
@@ -212,7 +195,7 @@
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><div class="img-placeholder">River Wheat</div></div>
+                    <div class="brew-image"><img src="assets/river-wheat.jpg" alt="River Wheat"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">River Wheat</h3>
                         <span class="brew-style">Smooth &amp; Refreshing</span>
@@ -221,7 +204,7 @@
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><div class="img-placeholder">Falls Pale Ale</div></div>
+                    <div class="brew-image"><img src="assets/falls-pale-ale.jpg" alt="Falls Pale Ale"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Falls Pale Ale</h3>
                         <span class="brew-style">Citrus &amp; Balanced</span>
@@ -230,7 +213,7 @@
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><div class="img-placeholder">Sunset Cider</div></div>
+                    <div class="brew-image"><img src="assets/sunset-cider.jpg" alt="Sunset Cider"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Sunset Cider</h3>
                         <span class="brew-style">Dry &amp; Fruity</span>
@@ -381,17 +364,15 @@
         </div>
     </div>
 
+    </main>
+
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="nav-logo">
-                        <span class="nav-logo-mark">S</span>
-                        <div class="nav-logo-text">
-                            <span class="nav-logo-title">THE SMOKEHOUSE</span>
-                            <span class="nav-logo-sub">at River Brewery</span>
-                        </div>
+                        <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
                     </a>
                     <p>Victoria Falls' home of craft beer, smokehouse dining, and unforgettable live entertainment.</p>
                     <div class="footer-socials">

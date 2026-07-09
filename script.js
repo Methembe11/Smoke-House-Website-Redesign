@@ -56,6 +56,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        if (img) openLightbox(img.src);
+    });
+});
+
 function openLightbox(src) {
     lightboxImg.src = src;
     lightbox.classList.add('active');
@@ -168,12 +175,11 @@ if (bookingModal) {
                 const data = {};
                 formData.forEach((value, key) => { data[key] = value; });
 
-                const reservations = JSON.parse(localStorage.getItem('smokehouseReservations') || '[]');
-                reservations.push({
-                    ...data,
-                    timestamp: new Date().toISOString()
-                });
-                localStorage.setItem('smokehouseReservations', JSON.stringify(reservations));
+                fetch('/api/reservations', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                }).catch(() => {});
 
                 bookingForm.reset();
                 bookingSuccess.classList.add('active');
@@ -210,9 +216,11 @@ if (newsletterForm) {
         const email = input.value.trim();
 
         if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            const subscribers = JSON.parse(localStorage.getItem('smokehouseSubscribers') || '[]');
-            subscribers.push({ email, timestamp: new Date().toISOString() });
-            localStorage.setItem('smokehouseSubscribers', JSON.stringify(subscribers));
+            fetch('/api/subscribers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            }).catch(() => {});
 
             input.value = '';
             newsletterSuccess.classList.add('active');
