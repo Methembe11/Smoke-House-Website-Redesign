@@ -7,6 +7,24 @@
   },
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/style.css",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    },
+    {
+      "src": "/script.js",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

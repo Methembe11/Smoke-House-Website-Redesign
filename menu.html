@@ -13,9 +13,19 @@
     <title>Menu | The Smokehouse at River Brewery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <script>
+    (function(){
+      var t=document.createElement('script');
+      t.src='https://use.typekit.net/wmb4cus.js';
+      t.async=1;
+      t.onload=function(){try{Typekit.load({async:1})}catch(e){}};
+      document.head.appendChild(t);
+    })();
+    </script>
     <link rel="stylesheet" href="style.css">
+    <script src="icons.js" defer></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -50,7 +60,7 @@
     <!-- PAGE BANNER -->
     <section class="page-banner">
         <div class="page-banner-overlay"></div>
-        <img src="assets/menu-banner.jpg" alt="Menu Banner">
+        <img src="assets/menu-banner.jpg" alt="Menu Banner" loading="lazy" width="1200" height="500">
         <div class="page-banner-content reveal">
             <h1>Our <span class="text-copper">Menu</span></h1>
             <p>Slow-smoked perfection, handcrafted brews, and bold flavours — <em>explore</em> what's on the grill.</p>
@@ -58,7 +68,7 @@
     </section>
 
     <!-- FULL MENU -->
-    <section class="menu-section">
+    <section class="menu-section glass-section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">Signature Selection</span>
@@ -68,7 +78,7 @@
             <div class="menu-grid reveal-stagger">
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/smokehouse-burger.jpg" alt="Smokehouse Burger">
+                        <img src="assets/smokehouse-burger.jpg" alt="Smokehouse Burger" loading="lazy" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Bestseller</span>
                             <span class="menu-price">$14</span>
@@ -81,7 +91,7 @@
                 </div>
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/smoked-ribs.jpg" alt="Smoked Ribs">
+                        <img src="assets/smoked-ribs.jpg" alt="Smoked Ribs" loading="lazy" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Signature</span>
                             <span class="menu-price">$22</span>
@@ -94,7 +104,7 @@
                 </div>
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/peri-peri-chicken.jpg" alt="Peri-Peri Chicken">
+                        <img src="assets/peri-peri-chicken.jpg" alt="Peri-Peri Chicken" loading="lazy" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Spicy</span>
                             <span class="menu-price">$16</span>
@@ -107,7 +117,7 @@
                 </div>
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/craft-beer-flight.jpg" alt="Craft Beer Flight">
+                        <img src="assets/craft-beer-flight.jpg" alt="Craft Beer Flight" loading="lazy" decoding="async" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Must Try</span>
                             <span class="menu-price">$10</span>
@@ -120,7 +130,7 @@
                 </div>
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/zambezi-sundae.jpg" alt="Zambezi Sundae">
+                        <img src="assets/zambezi-sundae.jpg" alt="Zambezi Sundae" loading="lazy" decoding="async" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Sweet</span>
                             <span class="menu-price">$9</span>
@@ -133,7 +143,7 @@
                 </div>
                 <div class="menu-card">
                     <div class="menu-image">
-                        <img src="assets/smokehouse-mule.jpg" alt="Smokehouse Mule">
+                        <img src="assets/smokehouse-mule.jpg" alt="Smokehouse Mule" loading="lazy" decoding="async" width="600" height="600">
                         <div class="menu-overlay">
                             <span class="menu-tag">Cocktail</span>
                             <span class="menu-price">$12</span>

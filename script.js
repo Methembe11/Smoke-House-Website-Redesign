@@ -241,7 +241,7 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal, .reveal-stagger, .reveal-scale, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
 
 /* === SMOOTH SCROLL FOR ANCHOR LINKS === */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

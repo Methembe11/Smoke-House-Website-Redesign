@@ -11,12 +11,21 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <title>The Smokehouse at River Brewery | Victoria Falls</title>
-    <link rel="stylesheet" href="https://use.typekit.net/wmb4cus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <script>
+    (function(){
+      var t=document.createElement('script');
+      t.src='https://use.typekit.net/wmb4cus.js';
+      t.async=1;
+      t.onload=function(){try{Typekit.load({async:1})}catch(e){}};
+      document.head.appendChild(t);
+    })();
+    </script>
     <link rel="stylesheet" href="style.css">
+    <script src="icons.js" defer></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -50,53 +59,42 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
-        <div class="hero-image">
-            <img src="assets/hero-bg.webp" alt="Hero Background">
-        </div>
-        <div class="hero-smoke">
-            <span></span><span></span><span></span>
-        </div>
-        <div class="hero-bubbles">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
-        <div class="hero-ember">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            <i></i><i></i><i></i><i></i>
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">SMOKEHOUSE<br><span class="text-copper">Craft Beer &amp; Kitchen</span></h1>
-            <p class="hero-tagline">Fire. Smoke. Flavour. Craft Beers.</p>
-            <div class="hero-divider"></div>
-            <p class="hero-subtitle">Victoria Falls, Zimbabwe</p>
-            <div class="hero-buttons">
-                <a href="menu.html" class="btn-primary">View Menu</a>
-                <a href="#reservation" class="btn-secondary booking-trigger">Reserve a Table</a>
+        <div class="hero-shell">
+            <div class="hero-card">
+                <div class="hero-copy">
+                    <span class="section-label">Smokehouse</span>
+                    <h1 class="hero-title">Where <span class="text-copper">Smoke</span> Meets Craft</h1>
+                    <p class="hero-tagline">A premium dining destination by Victoria Falls, with slow-smoked kitchen favourites and locally brewed beer served in a refined setting.</p>
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="btn-primary">View Menu</a>
+                        <a href="#reservation" class="btn-secondary booking-trigger">Reserve a Table</a>
+                    </div>
+                    <div class="hero-social">
+                        <span class="hero-social-item">
+                            <i class="fa-solid fa-star"></i>
+                            <strong>4.9</strong> Rating
+                        </span>
+                        <span class="hero-social-item">
+                            <i class="fa-solid fa-beer-mug-empty"></i>
+                            <strong>8+</strong> Beers on Tap
+                        </span>
+                        <span class="hero-social-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <strong>1km</strong> from the Falls
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-visual-frame">
+                        <img src="assets/hero-bg.webp" alt="Smokehouse dining experience" loading="eager" fetchpriority="high" width="800" height="600">
+                    </div>
+                </div>
             </div>
-            <div class="hero-social">
-                <span class="hero-social-item">
-                    <i class="fa-solid fa-star"></i>
-                    <strong>4.9</strong> Rating
-                </span>
-                <span class="hero-social-item">
-                    <i class="fa-solid fa-beer-mug-empty"></i>
-                    <strong>8+</strong> Beers on Tap
-                </span>
-                <span class="hero-social-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <strong>1km</strong> from the Falls
-                </span>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <i class="fa-solid fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- ABOUT + EXPERIENCE -->
-    <section class="about reveal" id="about">
+    <section class="about glass-section reveal" id="about">
         <div class="container">
             <div class="about-content">
                 <span class="section-label">Our Story</span>
@@ -152,7 +150,7 @@
     <!-- FULL-BLEED -->
     <div class="full-bleed-image reveal">
         <div class="full-bleed-overlay"></div>
-        <img src="assets/atmosphere.jpg" alt="Atmosphere">
+            <img src="assets/atmosphere.jpg" alt="Atmosphere" loading="lazy" width="1200" height="700">
         <div class="full-bleed-caption">
             <span class="section-label">The Vibe</span>
             <h2>Where the <span class="text-copper">River</span> Meets the <em>Flame</em></h2>
@@ -160,7 +158,7 @@
     </div>
 
     <!-- FEATURED MENU -->
-    <section class="menu-section" id="menu">
+    <section class="menu-section glass-section" id="menu">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">From the Kitchen</span>
@@ -169,7 +167,7 @@
             </div>
             <div class="featured-dish reveal">
                 <div class="featured-dish-image">
-                    <img src="assets/smokehouse-burger.jpg" alt="Smokehouse Burger">
+                    <img src="assets/smokehouse-burger.jpg" alt="Smokehouse Burger" loading="lazy" width="600" height="400">
                 </div>
                 <div class="featured-dish-info">
                     <span class="featured-dish-tag">Bestseller</span>
@@ -213,7 +211,7 @@
     </section>
 
     <!-- OUR BREWS -->
-    <section class="brews" id="brews">
+    <section class="brews glass-section" id="brews">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">On Tap</span>
@@ -223,58 +221,58 @@
             </div>
             <div class="brews-grid reveal-stagger">
                 <div class="brew-card">
-                    <div class="brew-image"><img src="assets/zambezi-lager.jpg" alt="Zambezi Lager"></div>
+                    <div class="brew-image"><img src="assets/zambezi-lager.jpg" alt="Zambezi Lager" loading="lazy" width="400" height="400"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Zambezi Lager</h3>
                         <span class="brew-style">Crisp &amp; Clean</span>
                         <span class="brew-abv">4.5% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><img src="assets/victoria-ipa.jpg" alt="Victoria IPA"></div>
+                    <div class="brew-image"><img src="assets/victoria-ipa.jpg" alt="Victoria IPA" loading="lazy" width="400" height="400"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Victoria IPA</h3>
                         <span class="brew-style">Bold &amp; Hoppy</span>
                         <span class="brew-abv">6.2% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
                 <div class="brew-card brew-card--featured">
-                    <div class="brew-image"><img src="assets/smokehouse-stout.jpg" alt="Smokehouse Stout"></div>
+                    <div class="brew-image"><img src="assets/smokehouse-stout.jpg" alt="Smokehouse Stout" loading="lazy" width="400" height="400"></div>
                     <span class="brew-badge">Staff Pick</span>
                     <div class="brew-body">
                         <h3 class="brew-name">Smokehouse Stout</h3>
                         <span class="brew-style">Dark &amp; Smoky</span>
                         <span class="brew-abv">5.8% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><img src="assets/river-wheat.jpg" alt="River Wheat"></div>
+                    <div class="brew-image"><img src="assets/river-wheat.jpg" alt="River Wheat" loading="lazy" width="400" height="400"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">River Wheat</h3>
                         <span class="brew-style">Smooth &amp; Refreshing</span>
                         <span class="brew-abv">4.8% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><img src="assets/falls-pale-ale.jpg" alt="Falls Pale Ale"></div>
+                    <div class="brew-image"><img src="assets/falls-pale-ale.jpg" alt="Falls Pale Ale" loading="lazy" width="400" height="400"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Falls Pale Ale</h3>
                         <span class="brew-style">Citrus &amp; Balanced</span>
                         <span class="brew-abv">5.4% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
                 <div class="brew-card">
-                    <div class="brew-image"><img src="assets/sunset-cider.jpg" alt="Sunset Cider"></div>
+                    <div class="brew-image"><img src="assets/sunset-cider.jpg" alt="Sunset Cider" loading="lazy" width="400" height="400"></div>
                     <div class="brew-body">
                         <h3 class="brew-name">Sunset Cider</h3>
                         <span class="brew-style">Dry &amp; Fruity</span>
                         <span class="brew-abv">4.2% ABV</span>
-                        <a href="#" class="brew-order booking-trigger">Book Table</a>
+                        <a href="menu.html" class="brew-order">Order</a>
                     </div>
                 </div>
             </div>
@@ -282,7 +280,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials glass-section" id="testimonials">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">Reviews</span>
@@ -294,210 +292,105 @@
             <div class="testimonials-track">
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"The best craft beer in Victoria Falls paired with incredible food. The smoked ribs are out of this world. A must-visit."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">S</div>
                         <div>
-                            <span class="testimonial-name">Sarah J.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
+                            <span class="testimonial-name">Sarah J. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"Amazing atmosphere — live music, great food, and the friendliest staff in Zimbabwe. We came back three nights in a row!"</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">M</div>
                         <div>
-                            <span class="testimonial-name">Michael R.</span>
-                            <span class="testimonial-source">Google Reviews</span>
+                            <span class="testimonial-name">Michael R. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-google"></i> Google Reviews</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"The Smokehouse burger and a cold River lager — perfection. The vibe at night is electric. Don't miss it."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">T</div>
                         <div>
-                            <span class="testimonial-name">Thandi O.</span>
-                            <span class="testimonial-source">Facebook</span>
+                            <span class="testimonial-name">Thandi O. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-facebook"></i> Facebook</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"Crocodile souvlaki and a Victoria IPA — a pairing I never knew I needed. The fire-grilled flavours are unmatched."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">J</div>
                         <div>
-                            <span class="testimonial-name">James K.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
+                            <span class="testimonial-name">James K. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"The live music scene here is incredible. Great vibes, cold beer, and the peri-peri chicken is fire. Will definitely be back."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">N</div>
                         <div>
-                            <span class="testimonial-name">Nomsa D.</span>
-                            <span class="testimonial-source">Google Reviews</span>
+                            <span class="testimonial-name">Nomsa D. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-google"></i> Google Reviews</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"We booked a brewery tour and ended up staying for dinner. The Smokehouse Stout is the best dark beer I've had in Africa."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">D</div>
                         <div>
-                            <span class="testimonial-name">David L.</span>
-                            <span class="testimonial-source">Facebook</span>
+                            <span class="testimonial-name">David L. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-facebook"></i> Facebook</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"As a local, this is my go-to spot. Affordable, delicious, and always a good crowd. The beer flight is great value."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">C</div>
                         <div>
-                            <span class="testimonial-name">Chenai M.</span>
-                            <span class="testimonial-source">Google Reviews</span>
+                            <span class="testimonial-name">Chenai M. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-google"></i> Google Reviews</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        ★★★★★
                     </div>
                     <blockquote>"Perfect spot after a day at the Falls. The staff remembered us on our second visit — that's the kind of hospitality that brings you back."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar" aria-hidden="true">R</div>
                         <div>
-                            <span class="testimonial-name">Rachel P.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Duplicate set for seamless loop -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"The best craft beer in Victoria Falls paired with incredible food. The smoked ribs are out of this world. A must-visit."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">S</div>
-                        <div>
-                            <span class="testimonial-name">Sarah J.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"Amazing atmosphere — live music, great food, and the friendliest staff in Zimbabwe. We came back three nights in a row!"</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">M</div>
-                        <div>
-                            <span class="testimonial-name">Michael R.</span>
-                            <span class="testimonial-source">Google Reviews</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"The Smokehouse burger and a cold River lager — perfection. The vibe at night is electric. Don't miss it."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">T</div>
-                        <div>
-                            <span class="testimonial-name">Thandi O.</span>
-                            <span class="testimonial-source">Facebook</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"Crocodile souvlaki and a Victoria IPA — a pairing I never knew I needed. The fire-grilled flavours are unmatched."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">J</div>
-                        <div>
-                            <span class="testimonial-name">James K.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"The live music scene here is incredible. Great vibes, cold beer, and the peri-peri chicken is fire. Will definitely be back."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">N</div>
-                        <div>
-                            <span class="testimonial-name">Nomsa D.</span>
-                            <span class="testimonial-source">Google Reviews</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"We booked a brewery tour and ended up staying for dinner. The Smokehouse Stout is the best dark beer I've had in Africa."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">D</div>
-                        <div>
-                            <span class="testimonial-name">David L.</span>
-                            <span class="testimonial-source">Facebook</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"As a local, this is my go-to spot. Affordable, delicious, and always a good crowd. The beer flight is great value."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">C</div>
-                        <div>
-                            <span class="testimonial-name">Chenai M.</span>
-                            <span class="testimonial-source">Google Reviews</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote>"Perfect spot after a day at the Falls. The staff remembered us on our second visit — that's the kind of hospitality that brings you back."</blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" aria-hidden="true">R</div>
-                        <div>
-                            <span class="testimonial-name">Rachel P.</span>
-                            <span class="testimonial-source">TripAdvisor</span>
+                            <span class="testimonial-name">Rachel P. <span class="testimonial-verified"><i class="fa-solid fa-circle-check"></i> Verified</span></span>
+                            <span class="testimonial-source"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</span>
                         </div>
                     </div>
                 </div>
@@ -634,7 +527,7 @@
                         <input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter">
                         <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
                     </form>
-                    <div class="newsletter-success" id="newsletterSuccess">Thanks for subscribing!</div>
+                    <div class="newsletter-success" id="newsletterSuccess"><i class="fa-solid fa-check-circle"></i> Thanks for subscribing!</div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -643,6 +536,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="mobile-sticky-cta" id="mobileStickyCta">
+        <a href="tel:+263778025398" class="mobile-cta-call">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+        </a>
+        <a href="#reservation" class="mobile-cta-book booking-trigger">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Reserve a Table</span>
+        </a>
+    </div>
 
     <script src="script.js" defer></script>
 </body>

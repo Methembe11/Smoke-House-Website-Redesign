@@ -13,9 +13,19 @@
     <title>Gallery | The Smokehouse at River Brewery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <script>
+    (function(){
+      var t=document.createElement('script');
+      t.src='https://use.typekit.net/wmb4cus.js';
+      t.async=1;
+      t.onload=function(){try{Typekit.load({async:1})}catch(e){}};
+      document.head.appendChild(t);
+    })();
+    </script>
     <link rel="stylesheet" href="style.css">
+    <script src="icons.js" defer></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -50,7 +60,7 @@
     <!-- PAGE BANNER -->
     <section class="page-banner">
         <div class="page-banner-overlay"></div>
-        <img src="assets/gallery-banner.jpg" alt="Gallery Banner">
+        <img loading="lazy" src="assets/gallery-banner.jpg" alt="Gallery Banner" width="1200" height="500">
         <div class="page-banner-content reveal">
             <h1><span class="text-copper">Gallery</span></h1>
             <p>A <em>glimpse</em> of The Smokehouse — where fire, flavour, and the Zambezi spirit <em>come together</em>.</p>
@@ -61,31 +71,31 @@
     <section class="gallery">
         <div class="gallery-masonry reveal-stagger">
             <div class="gallery-item gallery-item--wide">
-                <img src="assets/restaurant-interior.jpg" alt="Restaurant Interior">
+                <img loading="lazy" src="assets/restaurant-interior.jpg" alt="Restaurant Interior" width="800" height="400">
             </div>
             <div class="gallery-item">
-                <img src="assets/burger-and-beer.jpg" alt="Burger &amp; Beer">
+                <img loading="lazy" src="assets/burger-and-beer.jpg" alt="Burger &amp; Beer" width="400" height="400">
             </div>
             <div class="gallery-item">
-                <img src="assets/dessert.jpg" alt="Dessert">
+                <img loading="lazy" src="assets/dessert.jpg" alt="Dessert" width="400" height="400">
             </div>
             <div class="gallery-item gallery-item--tall">
-                <img src="assets/craft-cocktail.jpg" alt="Craft Cocktail">
+                <img loading="lazy" src="assets/craft-cocktail.jpg" alt="Craft Cocktail" width="400" height="800">
             </div>
             <div class="gallery-item">
-                <img src="assets/grilled-steak.jpg" alt="Grilled Steak">
+                <img loading="lazy" src="assets/grilled-steak.jpg" alt="Grilled Steak" width="400" height="400">
             </div>
             <div class="gallery-item">
-                <img src="assets/beer-selection.jpg" alt="Beer Selection">
+                <img loading="lazy" src="assets/beer-selection.jpg" alt="Beer Selection" width="400" height="400">
             </div>
             <div class="gallery-item gallery-item--wide">
-                <img src="assets/restaurant-bar.jpg" alt="Restaurant Bar">
+                <img loading="lazy" src="assets/restaurant-bar.jpg" alt="Restaurant Bar" width="800" height="400">
             </div>
             <div class="gallery-item">
-                <img src="assets/dining-area.jpg" alt="Dining Area">
+                <img loading="lazy" src="assets/dining-area.jpg" alt="Dining Area" width="400" height="400">
             </div>
             <div class="gallery-item">
-                <img src="assets/live-music-night.jpg" alt="Live Music Night">
+                <img loading="lazy" src="assets/live-music-night.jpg" alt="Live Music Night" width="400" height="400">
             </div>
         </div>
     </section>
