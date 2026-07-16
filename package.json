@@ -2,14 +2,5 @@
   "name": "smokehouse",
   "version": "1.0.0",
   "description": "The Smokehouse at River Brewery - Victoria Falls",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "jimp": "^1.6.1"
-  }
+  "private": true
 }
