@@ -488,7 +488,7 @@ main {
     width: 100%;
     position: relative;
     border-radius: 48px;
-    box-shadow: 0 45px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 45px 90px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     min-height: 560px;
     display: flex;
@@ -500,12 +500,25 @@ main {
     z-index: 2;
     max-width: 620px;
     padding: 64px;
+    animation: heroFadeIn 1s ease-out both;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-copy .section-label {
     color: #e8a541;
     letter-spacing: 3px;
     margin-bottom: 18px;
+    animation: heroFadeIn 1s ease-out 0.2s both;
 }
 
 .hero-title {
@@ -515,6 +528,7 @@ main {
     line-height: 1.02;
     color: #ffffff;
     margin-bottom: 22px;
+    animation: heroFadeIn 1s ease-out 0.3s both;
 }
 
 .hero-title .text-copper {
@@ -532,6 +546,7 @@ main {
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 560px;
+    animation: heroFadeIn 1s ease-out 0.4s both;
 }
 
 .hero-buttons {
@@ -540,37 +555,51 @@ main {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 32px;
+    animation: heroFadeIn 1s ease-out 0.5s both;
 }
 
 .hero-buttons .btn-secondary {
-    color: var(--charcoal);
-    background: rgba(255, 255, 255, 0.92);
-    border-color: rgba(43, 26, 23, 0.15);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
 }
 
 .hero-buttons .btn-secondary:hover {
-    background: rgba(46, 141, 161, 0.11);
-    color: var(--charcoal);
-    border-color: var(--copper);
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 .hero-social {
     display: flex;
-    gap: 28px;
+    gap: 14px;
     flex-wrap: wrap;
     align-items: center;
+    animation: heroFadeIn 1s ease-out 0.6s both;
 }
 
 .hero-social-item {
-    color: var(--gray-500);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-social-item i {
-    color: var(--copper-dark);
+    color: #e8a541;
+    font-size: 0.75rem;
 }
 
 .hero-social-item strong {
     color: #ffffff;
+    font-weight: 700;
 }
 
 .hero-visual {
@@ -599,6 +628,19 @@ main {
     height: 100%;
     display: block;
     object-fit: cover;
+}
+
+@keyframes heroImageZoom {
+    from {
+        transform: scale(1.08);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hero-visual-frame img {
+    animation: heroImageZoom 1.5s ease-out both;
 }
 
 @media (max-width: 1024px) {
