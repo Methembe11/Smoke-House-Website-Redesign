@@ -485,6 +485,7 @@ main {
 }
 
 .hero-card {
+    width: 100%;
     position: relative;
     border-radius: 48px;
     box-shadow: 0 45px 90px rgba(0, 0, 0, 0.08);
