@@ -485,23 +485,24 @@ main {
 }
 
 .hero-card {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 48px;
-    background: rgba(255, 255, 255, 0.98);
-    border: 1px solid rgba(12, 12, 12, 0.05);
+    position: relative;
     border-radius: 48px;
     box-shadow: 0 45px 90px rgba(0, 0, 0, 0.08);
-    padding: 64px;
-    overflow: visible;
+    overflow: hidden;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-copy {
+    position: relative;
+    z-index: 2;
     max-width: 620px;
+    padding: 64px;
 }
 
 .hero-copy .section-label {
-    color: var(--copper-dark);
+    color: #e8a541;
     letter-spacing: 3px;
     margin-bottom: 18px;
 }
@@ -511,13 +512,13 @@ main {
     font-size: clamp(3.5rem, 6vw, 5.5rem);
     font-weight: 700;
     line-height: 1.02;
-    color: var(--charcoal);
+    color: #ffffff;
     margin-bottom: 22px;
 }
 
 .hero-title .text-copper {
     display: inline;
-    color: var(--copper-dark);
+    color: #e8a541;
     font-size: 0.92em;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -526,8 +527,7 @@ main {
 .hero-tagline {
     font-size: 1.05rem;
     font-weight: 400;
-    color: var(--charcoal);
-    opacity: 0.85;
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 560px;
@@ -569,23 +569,28 @@ main {
 }
 
 .hero-social-item strong {
-    color: var(--charcoal);
+    color: #ffffff;
 }
 
 .hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 480px;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.15) 60%, transparent 100%);
+    z-index: 1;
 }
 
 .hero-visual-frame {
     width: 100%;
     height: 100%;
-    border-radius: 32px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .hero-visual-frame img {
@@ -597,13 +602,11 @@ main {
 
 @media (max-width: 1024px) {
     .hero-card {
-        grid-template-columns: 1fr;
-        gap: 36px;
-        padding: 48px;
+        min-height: auto;
     }
 
-    .hero-visual {
-        order: -1;
+    .hero-copy {
+        padding: 48px;
     }
 }
 
@@ -613,8 +616,12 @@ main {
     }
 
     .hero-card {
-        padding: 36px;
         border-radius: 32px;
+        min-height: auto;
+    }
+
+    .hero-copy {
+        padding: 36px;
     }
 
     .hero-title {
@@ -2128,9 +2135,6 @@ main {
         animation-duration: 80s;
     }
 
-    .hero-visual-frame {
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-    }
 }
 
 /* === MOBILE STICKY CTA === */
