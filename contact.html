@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Smokehouse at River Brewery, Victoria Falls. Book a table, find us on the map, or get in touch.">
+    <meta property="og:title" content="Contact | The Smokehouse at River Brewery">
+    <meta property="og:description" content="Find us in Victoria Falls, Zimbabwe. Reserve a table, call, or email us.">
+    <meta property="og:url" content="https://smokehousezim.com/contact">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Contact | The Smokehouse at River Brewery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Open+Sans:wght@300;400;500;600;700&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="style.css">
+    <script src="icons.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" role="banner">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
+                <span class="nav-logo-text">Smokehouse</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="nav-hours">Open Daily 11AM – 11PM</span>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="page-banner-overlay"></div>
+        <img loading="lazy" src="assets/contact-banner.jpg" alt="Contact Banner" width="1200" height="500">
+        <div class="page-banner-content reveal">
+            <h1>Find <span class="text-copper">Us</span></h1>
+            <p>We're just 1km from Victoria Falls — <em>come say hello</em>.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact glass-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-stagger">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Address</h4>
+                        <p>Elephant's Walk Shopping &amp; Artist's Village<br>270 Adam Stander Drive<br>Victoria Falls, Zimbabwe</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+263778025398">+263 77 802 5398</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@smokehousezim.com">info@smokehousezim.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-regular fa-clock"></i>
+                        <h4>Opening Hours</h4>
+                        <p>Daily: 12:00 PM — Late</p>
+                    </div>
+                </div>
+                <div class="contact-map reveal">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.536983286985!2d25.8400139!3d-17.9249219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fe5c3ff6f03ff%3A0x7d80c94b7a901fa7!2sThe+Smokehouse+at+River+Brewery+Victoria+Falls!5e0!3m2!1sen!2szw!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Smokehouse at River Brewery location on Google Maps"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION CTA -->
+    <section class="reservation" id="reservation">
+        <div class="reservation-bg"></div>
+        <div class="container">
+            <div class="reservation-content reveal">
+                <span class="section-label">Book a Table</span>
+                <h2 class="reservation-title">Reserve Your <span class="text-copper">Experience</span></h2>
+                <p>Whether it's an intimate dinner, a celebration, or an evening of live music — we're ready for you.</p>
+                <div class="reservation-buttons">
+                    <a href="tel:+263778025398" class="btn-primary"><i class="fa-solid fa-phone"></i> Call +263 77 802 5398</a>
+                    <a href="#" class="btn-secondary booking-trigger" id="openBookingBtn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING MODAL -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-overlay"></div>
+        <div class="booking-modal-content">
+            <button class="booking-modal-close" id="bookingModalClose" aria-label="Close booking form">&times;</button>
+            <h3>Book a Table</h3>
+            <p>Fill in your details and we'll confirm your reservation.</p>
+            <form class="booking-form" id="bookingForm" novalidate>
+                <div class="form-group">
+                    <label for="bookingName">Full Name</label>
+                    <input type="text" id="bookingName" name="name" required placeholder="Your full name">
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="bookingEmail">Email Address</label>
+                    <input type="email" id="bookingEmail" name="email" required placeholder="your@email.com">
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="bookingPhone">Phone Number</label>
+                    <input type="tel" id="bookingPhone" name="phone" required placeholder="+263 7X XXX XXXX">
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingDate">Date</label>
+                        <input type="date" id="bookingDate" name="date" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingTime">Time</label>
+                        <select id="bookingTime" name="time" required>
+                            <option value="">Select time</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                        <span class="form-error"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookingGuests">Number of Guests</label>
+                    <select id="bookingGuests" name="guests" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6+ People</option>
+                    </select>
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="bookingRequests">Special Requests (Optional)</label>
+                    <textarea id="bookingRequests" name="requests" placeholder="Any dietary requirements or special occasion?" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary booking-submit">Confirm Reservation</button>
+                <div class="booking-success" id="bookingSuccess">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <p>Thank you. Your reservation request has been received. We will confirm shortly.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
+                    </a>
+                    <p>Victoria Falls' home of craft beer, smokehouse dining, and unforgettable live entertainment.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/CraftyVicFalls" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/theriverbrewingco/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@theriverbrewingco" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit Us</h4>
+                    <ul>
+                        <li><a href="https://www.riverbrewco.com" target="_blank" rel="noopener noreferrer">River Brewing Co</a></li>
+                        <li><a href="https://www.riverbrewco.com/brewery-tours/" target="_blank" rel="noopener noreferrer">Brewery Tours</a></li>
+                        <li><a href="https://www.riverbrewco.com/event-services/" target="_blank" rel="noopener noreferrer">Event Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe for events, new brews, and specials.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="newsletter-success" id="newsletterSuccess"><i class="fa-solid fa-check-circle"></i> Thanks for subscribing!</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Smokehouse at River Brewery. All rights reserved.</p>
+                <p>Part of <a href="https://www.riverbrewco.com" target="_blank" rel="noopener noreferrer">River Brewing Co</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

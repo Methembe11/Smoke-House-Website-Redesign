@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the full menu at The Smokehouse at River Brewery - Victoria Falls. Signature smokehouse dishes, craft beer, and handcrafted cocktails.">
+    <meta property="og:title" content="Menu | The Smokehouse at River Brewery">
+    <meta property="og:description" content="Slow-smoked meats, handcrafted beer, and unforgettable flavours in Victoria Falls.">
+    <meta property="og:url" content="https://smokehousezim.com/menu">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Menu | The Smokehouse at River Brewery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Open+Sans:wght@300;400;500;600;700&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="style.css">
+    <script src="icons.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" role="banner">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
+                <span class="nav-logo-text">Smokehouse</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="nav-hours">Open Daily 11AM – 11PM</span>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="page-banner-overlay"></div>
+        <img src="assets/menu-banner.jpg" alt="Menu Banner" loading="lazy" width="1200" height="500">
+        <div class="page-banner-content reveal">
+            <h1>Our <span class="text-copper">Menu</span></h1>
+            <p>Slow-smoked perfection, handcrafted brews, and bold flavours — <em>explore</em> what's on the grill.</p>
+        </div>
+    </section>
+
+    <!-- FULL MENU -->
+    <section class="menu-section glass-section">
+        <div class="container">
+
+            <!-- FILTER PILLS -->
+            <div class="filter-bar reveal">
+                <button class="filter-pill active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="breakfast">Breakfast</button>
+                <button class="filter-pill" data-filter="lunch">Lunch</button>
+                <button class="filter-pill" data-filter="dinner">Dinner</button>
+                <button class="filter-pill" data-filter="food">Food</button>
+                <button class="filter-pill" data-filter="beers">Beers</button>
+                <button class="filter-pill" data-filter="smoothies">Smoothies</button>
+            </div>
+
+            <!-- MENU GRID -->
+            <div class="menu-filter-grid reveal-stagger">
+
+                <!-- FOOD: Signature Smokehouse -->
+                <div class="menu-card" data-categories="food dinner">
+                    <div class="menu-image">
+                        <img src="assets/item-brisket.jpg" alt="Smoked Beef Brisket" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Signature</span>
+                            <span class="menu-price">$18</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Smoked Beef Brisket</h3>
+                        <p>12-hour smoked brisket, house rub, chimichurri, roasted root vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food dinner">
+                    <div class="menu-image">
+                        <img src="assets/item-ribs.jpg" alt="Baby Back Ribs" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Signature</span>
+                            <span class="menu-price">$22</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Baby Back Ribs</h3>
+                        <p>Low-and-slow pork ribs, house BBQ glaze, coleslaw, slap chips.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food dinner">
+                    <div class="menu-image">
+                        <img src="assets/item-pulled-pork.jpg" alt="Pulled Pork Plate" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Popular</span>
+                            <span class="menu-price">$14</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pulled Pork Plate</h3>
+                        <p>Slow-smoked pulled pork, brioche bun, pickled onions, house slaw.</p>
+                    </div>
+                </div>
+
+                <!-- FOOD: Burgers -->
+                <div class="menu-card" data-categories="food lunch">
+                    <div class="menu-image">
+                        <img src="assets/item-smoked-burger.jpg" alt="The Smokehouse Burger" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Bestseller</span>
+                            <span class="menu-price">$14</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>The Smokehouse Burger</h3>
+                        <p>Double beef patty, smoked bacon, cheddar, caramelised onions, house sauce.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food lunch">
+                    <div class="menu-image">
+                        <img src="assets/item-peri-chicken.jpg" alt="Peri-Peri Chicken Burger" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Spicy</span>
+                            <span class="menu-price">$13</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Peri-Peri Chicken Burger</h3>
+                        <p>Grilled chicken breast, peri-peri sauce, lettuce, tomato, jalapeños.</p>
+                    </div>
+                </div>
+
+                <!-- FOOD: Steaks -->
+                <div class="menu-card" data-categories="food dinner">
+                    <div class="menu-image">
+                        <img src="assets/item-ribeye.jpg" alt="Ribeye Steak" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Premium</span>
+                            <span class="menu-price">$26</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Ribeye Steak 300g</h3>
+                        <p>Prime ribeye, marbled and flame-seared, chunky chips, peppercorn sauce.</p>
+                    </div>
+                </div>
+
+                <!-- FOOD: Sides -->
+                <div class="menu-card" data-categories="food lunch dinner">
+                    <div class="menu-image">
+                        <img src="assets/item-nachos.jpg" alt="Loaded Nachos" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Sharing</span>
+                            <span class="menu-price">$11</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Loaded Nachos</h3>
+                        <p>Tortilla chips, melted cheese, jalapeños, guacamole, sour cream, salsa.</p>
+                    </div>
+                </div>
+
+                <!-- FOOD: Breakfast -->
+                <div class="menu-card" data-categories="food breakfast">
+                    <div class="menu-image">
+                        <img src="assets/item-breakfast.jpg" alt="The Full Smokehouse Breakfast" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Signature</span>
+                            <span class="menu-price">$12</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>The Full Smokehouse</h3>
+                        <p>Eggs, bacon, sausage, grilled tomato, mushrooms, toast, and baked beans.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food breakfast">
+                    <div class="menu-image">
+                        <img src="assets/item-eggs-benedict.jpg" alt="Eggs Benedict" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Popular</span>
+                            <span class="menu-price">$9</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Eggs Benedict</h3>
+                        <p>Poached eggs, smoked ham, hollandaise sauce, toasted English muffin.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food breakfast">
+                    <div class="menu-image">
+                        <img src="assets/item-avocado-toast.jpg" alt="Avocado Toast" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Fresh</span>
+                            <span class="menu-price">$8</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Avocado Toast</h3>
+                        <p>Sourdough, smashed avocado, poached egg, chilli flakes, microgreens.</p>
+                    </div>
+                </div>
+
+                <!-- FOOD: Lunch -->
+                <div class="menu-card" data-categories="food lunch">
+                    <div class="menu-image">
+                        <img src="assets/item-chicken-salad.jpg" alt="Grilled Chicken Salad" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Light</span>
+                            <span class="menu-price">$10</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Grilled Chicken Salad</h3>
+                        <p>Flame-grilled chicken breast, mixed greens, avocado, cherry tomatoes, balsamic.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="food lunch">
+                    <div class="menu-image">
+                        <img src="assets/item-steak-sandwich.jpg" alt="Steak Sandwich" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Filling</span>
+                            <span class="menu-price">$13</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Steak Sandwich</h3>
+                        <p>Sliced ribeye, caramelised onions, peppercorn sauce, ciabatta.</p>
+                    </div>
+                </div>
+
+                <!-- BEERS -->
+                <div class="menu-card" data-categories="beers">
+                    <div class="menu-image">
+                        <img src="assets/item-pale-ale.jpg" alt="Falls Pale Ale" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">House Brew</span>
+                            <span class="menu-price">$6</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Falls Pale Ale</h3>
+                        <p>Crisp, citrusy pale ale with a smooth finish. Brewed on-site at River Brewing Co.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="beers">
+                    <div class="menu-image">
+                        <img src="assets/item-lager.jpg" alt="Zambezi Lager" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Popular</span>
+                            <span class="menu-price">$5</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Zambezi Lager</h3>
+                        <p>Light, refreshing lager — the perfect beer for a hot Victoria Falls day.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="beers">
+                    <div class="menu-image">
+                        <img src="assets/item-stout.jpg" alt="Smokehouse Stout" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Rich</span>
+                            <span class="menu-price">$6</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Smokehouse Stout</h3>
+                        <p>Dark, roasted stout with coffee and chocolate undertones.</p>
+                    </div>
+                </div>
+
+                <!-- COCKTAILS (tagged as beers) -->
+                <div class="menu-card" data-categories="beers">
+                    <div class="menu-image">
+                        <img src="assets/item-cocktail-mule.jpg" alt="Smokehouse Mule" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Signature</span>
+                            <span class="menu-price">$12</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Smokehouse Mule</h3>
+                        <p>Vodka, ginger beer, lime, smoked rosemary — served in a copper mug.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="beers">
+                    <div class="menu-image">
+                        <img src="assets/item-old-fashioned.jpg" alt="Old Fashioned" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Classic</span>
+                            <span class="menu-price">$10</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Old Fashioned</h3>
+                        <p>Bourbon, Angostura bitters, sugar, orange peel — timeless and refined.</p>
+                    </div>
+                </div>
+
+                <!-- SMOOTHIES -->
+                <div class="menu-card" data-categories="smoothies">
+                    <div class="menu-image">
+                        <img src="assets/item-tropical-smoothie.jpg" alt="Tropical Sunrise" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Popular</span>
+                            <span class="menu-price">$7</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Tropical Sunrise</h3>
+                        <p>Mango, pineapple, passion fruit, and coconut milk — pure sunshine.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="smoothies">
+                    <div class="menu-image">
+                        <img src="assets/item-berry-smoothie.jpg" alt="Berry Blast" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Fresh</span>
+                            <span class="menu-price">$7</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Berry Blast</h3>
+                        <p>Blueberries, strawberries, banana, and Greek yoghurt.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-categories="smoothies">
+                    <div class="menu-image">
+                        <img src="assets/item-green-smoothie.jpg" alt="Green Machine" loading="lazy" width="600" height="800">
+                        <div class="menu-overlay">
+                            <span class="menu-tag">Healthy</span>
+                            <span class="menu-price">$8</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Green Machine</h3>
+                        <p>Spinach, banana, apple, ginger, and honey — energising and fresh.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="reservation">
+        <div class="reservation-bg"></div>
+        <div class="container">
+            <div class="reservation-content reveal">
+                <span class="section-label">Hungry?</span>
+                <h2 class="reservation-title">Ready to <em>Eat</em> &amp; <span class="text-copper">Drink</span>?</h2>
+                <p>Come experience the finest smokehouse dining in Victoria Falls. Book your table today.</p>
+                <div class="reservation-buttons">
+                    <a href="contact.html" class="btn-primary">Reserve a Table</a>
+                    <a href="index.html" class="btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="assets/logo.jpeg" alt="The Smokehouse" class="nav-logo-img">
+                    </a>
+                    <p>Victoria Falls' home of craft beer, smokehouse dining, and unforgettable live entertainment.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/CraftyVicFalls" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/theriverbrewingco/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@theriverbrewingco" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit Us</h4>
+                    <ul>
+                        <li><a href="https://www.riverbrewco.com" target="_blank" rel="noopener noreferrer">River Brewing Co</a></li>
+                        <li><a href="https://www.riverbrewco.com/brewery-tours/" target="_blank" rel="noopener noreferrer">Brewery Tours</a></li>
+                        <li><a href="https://www.riverbrewco.com/event-services/" target="_blank" rel="noopener noreferrer">Event Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe for events, new brews, and specials.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="newsletter-success" id="newsletterSuccess"><i class="fa-solid fa-check-circle"></i> Thanks for subscribing!</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Smokehouse at River Brewery. All rights reserved.</p>
+                <p>Part of <a href="https://www.riverbrewco.com" target="_blank" rel="noopener noreferrer">River Brewing Co</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
